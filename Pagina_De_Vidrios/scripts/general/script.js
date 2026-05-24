@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   updateBodyPadding();
 
   window.addEventListener('scroll', function() {
-    if (window.scrollY > 70) {
+    if (window.scrollY > 30) {
       header.classList.add('small');
     } else {
       header.classList.remove('small');
