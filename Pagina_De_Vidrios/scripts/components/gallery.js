@@ -67,7 +67,10 @@ class GalleryManager {
 
         categories.forEach(category => {
             const btn = document.createElement('button');
+            btn.type = 'button';
             btn.className = 'filter-btn';
+            btn.setAttribute('aria-pressed', category === 'all' ? 'true' : 'false');
+            btn.setAttribute('aria-label', `Filtrar por ${category === 'all' ? 'todas las categorías' : category}`);
             if (category === 'all') btn.classList.add('active');
             btn.textContent = category.charAt(0).toUpperCase() + category.slice(1);
             btn.addEventListener('click', () => this.filterByCategory(category, btn));
@@ -88,8 +91,10 @@ class GalleryManager {
         // Actualizar botón activo
         this.filterContainer.querySelectorAll('.filter-btn').forEach(btn => {
             btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
         });
         button.classList.add('active');
+        button.setAttribute('aria-pressed', 'true');
 
         // Filtrar items
         if (category === 'all') {
@@ -111,10 +116,19 @@ class GalleryManager {
         searchContainer.className = 'gallery-search';
 
         const input = document.createElement('input');
+        const inputId = `${this.galleryContainer.id}-search`;
+        input.id = inputId;
         input.type = 'text';
         input.placeholder = 'Buscar en galería...';
+        input.setAttribute('aria-label', 'Buscar en la galería');
         input.addEventListener('input', (e) => this.search(e.target.value));
 
+        const label = document.createElement('label');
+        label.setAttribute('for', inputId);
+        label.className = 'sr-only';
+        label.textContent = 'Buscar en la galería';
+
+        searchContainer.appendChild(label);
         searchContainer.appendChild(input);
         this.galleryContainer.insertBefore(searchContainer, this.galleryContainer.firstChild);
     }
@@ -269,8 +283,15 @@ class GalleryManager {
             `).join('');
 
             mainContent.querySelectorAll('.gallery-item').forEach(item => {
+                item.setAttribute('tabindex', '0');
                 item.addEventListener('click', () => {
                     this.openLightbox(item.getAttribute('data-gallery-item-id'));
+                });
+                item.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.openLightbox(item.getAttribute('data-gallery-item-id'));
+                    }
                 });
             });
         }
@@ -280,6 +301,7 @@ class GalleryManager {
         if (!statsDiv) {
             const stats = document.createElement('div');
             stats.className = 'gallery-stats';
+            stats.setAttribute('aria-live', 'polite');
             mainContent.appendChild(stats);
         }
 
