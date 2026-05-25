@@ -26,21 +26,39 @@
     <meta property="og:title" content="Servicios | Estructualuvid SAS">
     <meta property="og:description" content="Descubre nuestros servicios en vidrio y aluminio">
     <meta property="og:url" content="https://estructualuvid.com/services">
+        <meta property="og:image" content="https://estructualuvid.com/imagen-servicios.jpg">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Servicios | Estructualuvid SAS",
+            "description": "Galería de proyectos y servicios en vidrio y aluminio estructural.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Estructualuvid SAS",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://estructualuvid.com/Logos/LOGO_PRINCIPAL.webp"
+                }
+            }
+        }
+        </script>
     
     <link rel="icon" type="image/webp" href="Logos/LOGO_PRINCIPAL.webp">
     <link rel="shortcut icon" href="Logos/LOGO_PRINCIPAL.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+    <a class="skip-to-main" href="#main-content">Saltar al contenido</a>
     <!-- Header -->
     <header role="banner">
         <div class="header-inner">
             <div class="brand">
-                <img src="Logos/LOGO_PRINCIPAL.webp" alt="Estructualuvid SAS logo" class="site-logo" loading="lazy" decoding="async">
+                <img src="Logos/LOGO_PRINCIPAL.webp" alt="Estructualuvid SAS logo" class="site-logo" decoding="async" srcset="Logos/LOGO_PRINCIPAL.webp 400w, Logos/LOGO_PRINCIPAL.webp 800w" sizes="(max-width:600px) 92px, 120px" fetchpriority="high" loading="eager">
                 <div>
                     <h1>Servicios</h1>
                     <p>Galería de proyectos y soluciones en vidrio y aluminio estructural</p>
@@ -55,9 +73,9 @@
     </header>
 
     <!-- Main Content -->
-    <main role="main">
+    <main id="main-content" role="main">
         <!-- Section: Ventanería -->
-        <article id="ventaneria">
+        <article id="ventaneria" data-animate="fade-in-up">
             <section>
                 <h2>Ventanería</h2>
                 <p>Ventanas de aluminio de alta calidad con diseño moderno y excelente aislamiento térmico y acústico.</p>
@@ -66,45 +84,45 @@
                     <button class="carousel-btn prev" data-action="prev" data-carousel="ventaneria" aria-label="Foto anterior">❮</button>
                     
                     <div class="carousel-wrapper">
-                        <div class="carousel" id="carousel-ventaneria">
-                                <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria1.webp" alt="Ventanería 1" loading="lazy" decoding="async">
+                        <div class="carousel" id="carousel-ventaneria" role="list" aria-roledescription="carrusel" aria-label="Galería Ventanería">
+                                <div class="carousel-item" role="listitem" tabindex="0">
+                                <img src="Imagenes/Ventaneria/Ventaneria1.webp" srcset="Imagenes/Ventaneria/Ventaneria1.webp 800w, Imagenes/Ventaneria/Ventaneria1.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 1" loading="eager" decoding="async" fetchpriority="high">
                                 <p class="image-caption">Ventanería 1</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria2.webp" alt="Ventanería 2" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria2.webp" data-srcset="Imagenes/Ventaneria/Ventaneria2.webp 800w, Imagenes/Ventaneria/Ventaneria2.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 2" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 2</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria3.webp" alt="Ventanería 3" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria3.webp" data-srcset="Imagenes/Ventaneria/Ventaneria3.webp 800w, Imagenes/Ventaneria/Ventaneria3.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 3" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 3</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria4.webp" alt="Ventanería 4" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria4.webp" data-srcset="Imagenes/Ventaneria/Ventaneria4.webp 800w, Imagenes/Ventaneria/Ventaneria4.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 4" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 4</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria5.webp" alt="Ventanería 5" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria5.webp" data-srcset="Imagenes/Ventaneria/Ventaneria5.webp 800w, Imagenes/Ventaneria/Ventaneria5.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 5" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 5</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria6.webp" alt="Ventanería 6" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria6.webp" data-srcset="Imagenes/Ventaneria/Ventaneria6.webp 800w, Imagenes/Ventaneria/Ventaneria6.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 6" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 6</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria7.webp" alt="Ventanería 7" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria7.webp" data-srcset="Imagenes/Ventaneria/Ventaneria7.webp 800w, Imagenes/Ventaneria/Ventaneria7.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 7" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 7</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria8.webp" alt="Ventanería 8" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria8.webp" data-srcset="Imagenes/Ventaneria/Ventaneria8.webp 800w, Imagenes/Ventaneria/Ventaneria8.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 8" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 8</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria9.webp" alt="Ventanería 9" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria9.webp" data-srcset="Imagenes/Ventaneria/Ventaneria9.webp 800w, Imagenes/Ventaneria/Ventaneria9.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 9" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 9</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Ventaneria/Ventaneria10.webp" alt="Ventanería 10" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Ventaneria/Ventaneria10.webp" data-srcset="Imagenes/Ventaneria/Ventaneria10.webp 800w, Imagenes/Ventaneria/Ventaneria10.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Ventanería 10" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Ventanería 10</p>
                             </div>
                         </div>
@@ -139,32 +157,32 @@
         </article>
 
         <!-- Section: Fachadas -->
-        <article id="fachadas">
+        <article id="fachadas" data-animate="fade-in-up">
             <section>
                 <h2>Fachadas</h2>
                 <p>Fachadas en vidrio y aluminio que combinan estética, resistencia y funcionalidad para proyectos comerciales y residenciales.</p>
                 <div class="carousel-container">
                     <button class="carousel-btn prev" data-action="prev" data-carousel="fachadas" aria-label="Foto anterior">❮</button>
                     <div class="carousel-wrapper">
-                        <div class="carousel" id="carousel-fachadas">
-                            <div class="carousel-item">
-                                <img src="Imagenes/Fachadas/Fachada1.webp" alt="Fachada 1" loading="lazy" decoding="async">
+                        <div class="carousel" id="carousel-fachadas" role="list" aria-roledescription="carrusel" aria-label="Galería Fachadas">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img src="Imagenes/Fachadas/Fachada1.webp" srcset="Imagenes/Fachadas/Fachada1.webp 800w, Imagenes/Fachadas/Fachada1.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Fachada 1" loading="eager" decoding="async" fetchpriority="high">
                                 <p class="image-caption">Fachada 1</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Fachadas/Fachada2.webp" alt="Fachada 2" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Fachadas/Fachada2.webp" data-srcset="Imagenes/Fachadas/Fachada2.webp 800w, Imagenes/Fachadas/Fachada2.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Fachada 2" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Fachada 2</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Fachadas/Fachada3.webp" alt="Fachada 3" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Fachadas/Fachada3.webp" data-srcset="Imagenes/Fachadas/Fachada3.webp 800w, Imagenes/Fachadas/Fachada3.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Fachada 3" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Fachada 3</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Fachadas/Fachada5.webp" alt="Fachada 5" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Fachadas/Fachada5.webp" data-srcset="Imagenes/Fachadas/Fachada5.webp 800w, Imagenes/Fachadas/Fachada5.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Fachada 5" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Fachada 5</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Fachadas/Fachada6.webp" alt="Fachada 6" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Fachadas/Fachada6.webp" data-srcset="Imagenes/Fachadas/Fachada6.webp 800w, Imagenes/Fachadas/Fachada6.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="Fachada 6" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">Fachada 6</p>
                             </div>
                         </div>
@@ -196,7 +214,7 @@
         </article>
 
         <!-- Section: Divisiones del Baño -->
-        <article id="divisiones-bano">
+        <article id="divisiones-bano" data-animate="fade-in-up">
             <section>
                 <h2>Divisiones del Baño</h2>
                 <p>Divisiones en vidrio templado que transforman tu baño con modernidad y funcionalidad.</p>
@@ -205,33 +223,33 @@
                     <button class="carousel-btn prev" data-action="prev" data-carousel="bano" aria-label="Foto anterior">❮</button>
                     
                         <div class="carousel-wrapper">
-                        <div class="carousel" id="carousel-bano">
-                            <div class="carousel-item">
-                                <img src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os.webp" alt="División de baño 1" loading="lazy" decoding="async">
+                        <div class="carousel" id="carousel-bano" role="list" aria-roledescription="carrusel" aria-label="Galería Divisiones de Baño">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os.webp" srcset="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os.webp 800w, Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="División de baño 1" loading="eager" decoding="async" fetchpriority="high">
                                 <p class="image-caption">División de baño 1</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Divisiones-De-Ba%C3%B1os2.webp" alt="División de baño 2" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Divisiones-De-Ba%C3%B1os2.webp" data-srcset="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Divisiones-De-Ba%C3%B1os2.webp 800w, Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Divisiones-De-Ba%C3%B1os2.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="División de baño 2" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">División de baño 2</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os3.webp" alt="División de baño 3" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os3.webp" data-srcset="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os3.webp 800w, Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os3.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="División de baño 3" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">División de baño 3</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os4.webp" alt="División de baño 4" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os4.webp" data-srcset="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os4.webp 800w, Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os4.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="División de baño 4" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">División de baño 4</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os5.webp" alt="División de baño 5" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os5.webp" data-srcset="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os5.webp 800w, Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os5.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="División de baño 5" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">División de baño 5</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os6.webp" alt="División de baño 6" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os6.webp" data-srcset="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os6.webp 800w, Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os6.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="División de baño 6" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">División de baño 6</p>
                             </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os7.webp" alt="División de baño 7" loading="lazy" decoding="async">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img class="lazyload" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'></svg>" data-src="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os7.webp" data-srcset="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os7.webp 800w, Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os7.webp 400w" sizes="(max-width:600px) 100vw, 800px" alt="División de baño 7" loading="lazy" decoding="async" fetchpriority="low">
                                 <p class="image-caption">División de baño 7</p>
                             </div>
                         </div>
@@ -266,7 +284,7 @@
         </article>
 
         <!-- Section: Ventanas Acústicas -->
-        <article id="ventanas-acusticas">
+        <article id="ventanas-acusticas" class="service-dark" data-animate="fade-in-up">
             <section>
                 <h2>Ventanas Acústicas</h2>
                 <p>Especialidad en aislamiento acústico para ambientes que requieren máxima tranquilidad.</p>
@@ -275,22 +293,18 @@
                     <button class="carousel-btn prev" data-action="prev" data-carousel="acusticas" aria-label="Foto anterior">❮</button>
                     
                     <div class="carousel-wrapper">
-                        <div class="carousel" id="carousel-acusticas">
-                            <div class="carousel-item">
-                                <div class="image-placeholder" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);"></div>
-                                <p class="image-caption">Acústica 1</p>
+                        <div class="carousel" id="carousel-acusticas" role="list" aria-roledescription="carrusel" aria-label="Galería Ventanas Acústicas">
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img src="Imagenes/Ventanas acusticas/Ventanas acusticas/Ventanas-acusticas1.webp" srcset="Imagenes/Ventanas acusticas/Ventanas acusticas/Ventanas-acusticas1.webp 800w" sizes="(max-width:600px) 100vw, 800px" alt="Ventana acústica 1" loading="lazy" decoding="async">
+                                <p class="image-caption">Ventanas acústicas con marco sellado</p>
                             </div>
-                            <div class="carousel-item">
-                                <div class="image-placeholder" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);"></div>
-                                <p class="image-caption">Acústica 2</p>
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img src="Imagenes/Ventanas acusticas/Ventanas acusticas/Ventanas-acusticas-2.webp" srcset="Imagenes/Ventanas acusticas/Ventanas acusticas/Ventanas-acusticas-2.webp 800w" sizes="(max-width:600px) 100vw, 800px" alt="Ventana acústica 2" loading="lazy" decoding="async">
+                                <p class="image-caption">Solución acústica para espacios residenciales</p>
                             </div>
-                            <div class="carousel-item">
-                                <div class="image-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
-                                <p class="image-caption">Acústica 3</p>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="image-placeholder" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
-                                <p class="image-caption">Acústica 4</p>
+                            <div class="carousel-item" role="listitem" tabindex="0">
+                                <img src="Imagenes/Ventanas acusticas/Ventanas acusticas/Ventanas-acusticas-3jpeg.webp" srcset="Imagenes/Ventanas acusticas/Ventanas acusticas/Ventanas-acusticas-3jpeg.webp 800w" sizes="(max-width:600px) 100vw, 800px" alt="Ventana acústica 3" loading="lazy" decoding="async">
+                                <p class="image-caption">Aislamiento acústico para fachadas y ventanas</p>
                             </div>
                         </div>
                     </div>
@@ -317,11 +331,32 @@
                             <li>Hospitales y clínicas</li>
                         </ul>
                     </div>
+                    <div class="detail-item">
+                        <h3>Equipo especializado</h3>
+                        <ul class="team-list">
+                            <li><span class="name-blue">Carlos</span> - Instalación acústica</li>
+                            <li><span class="name-blue">Andrea</span> - Diseño técnico</li>
+                            <li><span class="name-blue">Julio</span> - Servicio postventa</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <a href="contactos/index.html" class="btn">Solicitar Cotización</a>
             </section>
         </article>
+        <section id="galeria" aria-labelledby="galeria-title" data-animate="fade-in-up">
+            <h2 id="galeria-title">Galería de proyectos</h2>
+            <p>Mira ejemplos de vidrios, fachadas y divisiones de baño en un formato responsive con filtros y lightbox.</p>
+
+            <div id="project-gallery" data-gallery>
+                <div data-gallery-item data-gallery-id="ventaneria-1" data-gallery-title="Ventanería moderna" data-gallery-description="Ventanería de aluminio con vidrio templado para espacios comerciales." data-gallery-category="ventaneria" data-gallery-image="Imagenes/Ventaneria/Ventaneria1.webp"></div>
+                <div data-gallery-item data-gallery-id="fachadas-1" data-gallery-title="Fachada contemporánea" data-gallery-description="Fachada en vidrio y aluminio con acabado elegante para locales." data-gallery-category="fachadas" data-gallery-image="Imagenes/Fachadas/Fachada1.webp"></div>
+                <div data-gallery-item data-gallery-id="bano-1" data-gallery-title="División de baño premium" data-gallery-description="División de baño en vidrio templado con acabado moderno." data-gallery-category="divisiones" data-gallery-image="Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os.webp"></div>
+                <div data-gallery-item data-gallery-id="acusticas-1" data-gallery-title="Ventanas acústicas" data-gallery-description="Ventanas acústicas diseñadas para aislamiento y confort." data-gallery-category="acusticas" data-gallery-image="Imagenes/Ventanas%20acusticas/Ventanas%20acusticas/Ventanas-Acusticas1.webp"></div>
+                <div data-gallery-item data-gallery-id="ventaneria-2" data-gallery-title="Ventanería residencial" data-gallery-description="Ventanería moderna con alta durabilidad y buen aislamiento." data-gallery-category="ventaneria" data-gallery-image="Imagenes/Ventaneria/Ventaneria2.webp"></div>
+                <div data-gallery-item data-gallery-id="fachadas-2" data-gallery-title="Fachada de vidrio" data-gallery-description="Fachada de vidrio estructural para proyecto corporativo." data-gallery-category="fachadas" data-gallery-image="Imagenes/Fachadas/Fachada2.webp"></div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -388,15 +423,11 @@
     <!-- Floating WhatsApp Button -->
     <a class="sticky" href="https://wa.me/573232439274" target="_blank" rel="noopener noreferrer" aria-label="Chat por WhatsApp">WhatsApp</a>
 
-    <div class="modal-overlay" id="image-modal" role="dialog" aria-label="Imagen ampliada" aria-hidden="true">
-        <button class="modal-nav prev" id="modal-prev" aria-label="Anterior imagen">❮</button>
-        <img class="modal-image" id="enlarged-image" alt="Imagen ampliada" loading="lazy" decoding="async">
-        <button class="modal-nav next" id="modal-next" aria-label="Siguiente imagen">❯</button>
-        <p class="modal-caption" id="modal-caption"></p>
-    </div>
-
+    <script src="scripts/general/lazy-load.js" defer></script>
     <script src="scripts/general/script.js" defer></script>
     <script src="scripts/services/carousel.js" defer></script>
+    <script src="scripts/components/gallery.js" defer></script>
+    <script src="scripts/components/animations.js" defer></script>
 </body>
 
 </html>

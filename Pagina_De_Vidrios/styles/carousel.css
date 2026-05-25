@@ -1,0 +1,178 @@
+/* ====== Carousel ====== */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 30px 0;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-wrapper {
+    flex: 1;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: none !important;
+}
+
+.carousel-item {
+    min-width: 100%;
+    flex-shrink: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    cursor: zoom-in;
+    transition: transform var(--transition-smooth), box-shadow 0.35s ease, opacity 0.4s ease;
+}
+
+.carousel-item img:hover {
+    transform: none;
+}
+
+.carousel-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: var(--white);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel-btn.prev {
+    left: 8px;
+}
+
+.carousel-btn.next {
+    right: 8px;
+}
+
+.carousel-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 119, 255, 0.3);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.image-placeholder {
+    width: 100%;
+    max-height: 70vh;
+    aspect-ratio: 16 / 10;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.image-caption {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ====== Service Details Grid ====== */
+.service-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.detail-item {
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.detail-item h3 {
+    margin: 0 0 15px;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.detail-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detail-item li {
+    padding: 8px 0;
+    color: #666;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.detail-item li:last-child {
+    border-bottom: none;
+}
+
+.detail-item li:before {
+    content: "✓ ";
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Dark service section for acoustic windows */
+.service-dark {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.95), rgba(13, 13, 13, 0.98));
+    color: var(--white);
+    padding: 40px 20px;
+    border-radius: 24px;
+    margin: 40px 0;
+}
+
+.service-dark h2,
+.service-dark p,
+.service-dark .image-caption,
+.service-dark .detail-item h3,
+.service-dark .detail-item li,
+.service-dark .team-list li {
+    color: #f5f5f5;
+}
+
+.service-dark .detail-item {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.service-dark .detail-item li {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.service-dark .carousel-btn {
+    color: var(--white);
+}
+
+.name-blue {
+    color: var(--primary-color);
+    font-weight: 700;
+}

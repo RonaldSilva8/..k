@@ -1,0 +1,268 @@
+{
+  "services": [
+    {
+      "id": "ventaneria",
+      "title": "Ventanería",
+      "description": "Ventanas de aluminio de alta calidad con diseño moderno y excelente aislamiento térmico y acústico.",
+      "images": [
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria1.webp",
+          "alt": "Ventanería 1",
+          "caption": "Ventanería 1",
+          "loading": "eager"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria2.webp",
+          "alt": "Ventanería 2",
+          "caption": "Ventanería 2",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria3.webp",
+          "alt": "Ventanería 3",
+          "caption": "Ventanería 3",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria4.webp",
+          "alt": "Ventanería 4",
+          "caption": "Ventanería 4",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria5.webp",
+          "alt": "Ventanería 5",
+          "caption": "Ventanería 5",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria6.webp",
+          "alt": "Ventanería 6",
+          "caption": "Ventanería 6",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria7.webp",
+          "alt": "Ventanería 7",
+          "caption": "Ventanería 7",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria8.webp",
+          "alt": "Ventanería 8",
+          "caption": "Ventanería 8",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria9.webp",
+          "alt": "Ventanería 9",
+          "caption": "Ventanería 9",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Ventaneria/Ventaneria10.webp",
+          "alt": "Ventanería 10",
+          "caption": "Ventanería 10",
+          "loading": "lazy"
+        }
+      ],
+      "details": [
+        {
+          "title": "Características",
+          "items": [
+            "Marco de aluminio resistente",
+            "Cristal templado o laminado",
+            "Apertura corredera o abatible",
+            "Instalación profesional incluida"
+          ]
+        },
+        {
+          "title": "Ventajas",
+          "items": [
+            "Excelente aislamiento térmico",
+            "Reducción de ruido exterior",
+            "Bajo mantenimiento",
+            "Garantía de 5 años"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fachadas",
+      "title": "Fachadas",
+      "description": "Fachadas en vidrio y aluminio que combinan estética, resistencia y funcionalidad para proyectos comerciales y residenciales.",
+      "images": [
+        {
+          "src": "Imagenes/Fachadas/Fachada1.webp",
+          "alt": "Fachada 1",
+          "caption": "Fachada 1",
+          "loading": "eager"
+        },
+        {
+          "src": "Imagenes/Fachadas/Fachada2.webp",
+          "alt": "Fachada 2",
+          "caption": "Fachada 2",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Fachadas/Fachada3.webp",
+          "alt": "Fachada 3",
+          "caption": "Fachada 3",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Fachadas/Fachada5.webp",
+          "alt": "Fachada 5",
+          "caption": "Fachada 5",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Fachadas/Fachada6.webp",
+          "alt": "Fachada 6",
+          "caption": "Fachada 6",
+          "loading": "lazy"
+        }
+      ],
+      "details": [
+        {
+          "title": "Ventajas de nuestras fachadas",
+          "items": [
+            "Fachadas ligeras y resistentes",
+            "Combinación de vidrio y aluminio",
+            "Acabados modernos y personalizados",
+            "Instalación segura y profesional"
+          ]
+        },
+        {
+          "title": "Aplicaciones",
+          "items": [
+            "Locales comerciales",
+            "Edificios corporativos",
+            "Viviendas modernas",
+            "Proyectos arquitectónicos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "divisiones-bano",
+      "title": "Divisiones del Baño",
+      "description": "Divisiones en vidrio templado que transforman tu baño con modernidad y funcionalidad.",
+      "images": [
+        {
+          "src": "Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os.webp",
+          "alt": "División de baño 1",
+          "caption": "División de baño 1",
+          "loading": "eager"
+        },
+        {
+          "src": "Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Divisiones-De-Ba%C3%B1os2.webp",
+          "alt": "División de baño 2",
+          "caption": "División de baño 2",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os3.webp",
+          "alt": "División de baño 3",
+          "caption": "División de baño 3",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os4.webp",
+          "alt": "División de baño 4",
+          "caption": "División de baño 4",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os5.webp",
+          "alt": "División de baño 5",
+          "caption": "División de baño 5",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os6.webp",
+          "alt": "División de baño 6",
+          "caption": "División de baño 6",
+          "loading": "lazy"
+        },
+        {
+          "src": "Imagenes/Divisiones%20para%20el%20ba%C3%B1o/Division-De-Ba%C3%B1os7.webp",
+          "alt": "División de baño 7",
+          "caption": "División de baño 7",
+          "loading": "lazy"
+        }
+      ],
+      "details": [
+        {
+          "title": "Tipos Disponibles",
+          "items": [
+            "Divisiones fijas de vidrio",
+            "Puertas pivotantes",
+            "Puertas correderas",
+            "Vidrio templado o esmerilado"
+          ]
+        },
+        {
+          "title": "Beneficios",
+          "items": [
+            "Amplía visualmente el espacio",
+            "Fácil limpieza y mantenimiento",
+            "Seguridad del vidrio templado",
+            "Diseños personalizables"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ventanas-acusticas",
+      "title": "Ventanas Acústicas",
+      "description": "Especialidad en aislamiento acústico para ambientes que requieren máxima tranquilidad.",
+      "images": [
+        {
+          "type": "placeholder",
+          "gradient": "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)",
+          "alt": "Acústica 1",
+          "caption": "Acústica 1"
+        },
+        {
+          "type": "placeholder",
+          "gradient": "linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)",
+          "alt": "Acústica 2",
+          "caption": "Acústica 2"
+        },
+        {
+          "type": "placeholder",
+          "gradient": "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
+          "alt": "Acústica 3",
+          "caption": "Acústica 3"
+        },
+        {
+          "type": "placeholder",
+          "gradient": "linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%)",
+          "alt": "Acústica 4",
+          "caption": "Acústica 4"
+        }
+      ],
+      "details": [
+        {
+          "title": "Especificaciones",
+          "items": [
+            "Doble vidrio laminado",
+            "Cámara de aire entre paneles",
+            "Reducción hasta 40dB",
+            "Marco de aluminio sellado"
+          ]
+        },
+        {
+          "title": "Aplicaciones",
+          "items": [
+            "Apartamentos en zonas ruidosas",
+            "Estudios y salas de cine",
+            "Espacios comerciales",
+            "Hospitales y clínicas"
+          ]
+        }
+      ]
+    }
+  ]
+}

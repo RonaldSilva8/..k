@@ -1,0 +1,198 @@
+/* ====== Sections ====== */
+section {
+    padding: 50px 18px;
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+    animation: fadeUp 0.5s ease;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section p,
+section ul {
+    margin: 0;
+}
+
+section#servicios p {
+    margin-bottom: 20px;
+}
+
+/* ====== Grid Cards ====== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 130px;
+    transition: transform var(--transition), box-shadow var(--transition);
+    color: var(--text-dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    background: var(--white);
+}
+
+.card-link {
+    color: var(--text-dark);
+}
+
+.card-link:hover {
+    color: var(--text-dark);
+}
+
+/* ====== Buttons ====== */
+.btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: var(--white);
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform var(--transition), box-shadow var(--transition);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 119, 255, 0.25);
+}
+
+.btn-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light)) !important;
+    color: var(--white) !important;
+    padding: 16px 32px !important;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 119, 255, 0.3) !important;
+}
+
+/* ====== Modal Overlay ====== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 16px;
+    cursor: zoom-out;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    object-fit: contain;
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
+    background: rgba(0, 0, 0, 0.45);
+    border: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background var(--transition) ease;
+    z-index: 10000;
+}
+
+.modal-nav:hover {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.modal-nav.prev {
+    left: 16px;
+}
+
+.modal-nav.next {
+    right: 16px;
+}
+
+.modal-caption {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+    font-size: 1rem;
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.modal-overlay button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* ====== Sticky WhatsApp Button ====== */
+.sticky {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #25d366, #1ebe5d);
+    color: var(--white);
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    transition: 0.25s ease;
+    text-decoration: none;
+}
+
+.sticky:hover {
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+    transform: translateY(-3px);
+}
+
+/* ====== Common Utilities ====== */
+img.lazyload {
+    opacity: 0;
+    transform: translateY(6px);
+}
+
+img.lazyloaded {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}

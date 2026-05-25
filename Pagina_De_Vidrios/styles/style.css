@@ -1,0 +1,35 @@
+/* ====== Estructualuvid - Main Stylesheet ====== */
+/* This file imports all modularized CSS files for better maintainability */
+
+/* 1. Base & Reset */
+@import url('base.css');
+
+/* 2. Header & Navigation */
+@import url('header.css');
+
+/* 3. Components (Cards, Buttons, Modals) */
+@import url('components.css');
+
+/* 4. Carousel & Service Details */
+@import url('carousel.css');
+
+/* 5. Sections (Hero, Stats, Testimonials, FAQ) */
+@import url('sections.css');
+
+/* 6. Footer */
+@import url('footer.css');
+
+/* 7. Accessibility (a11y) */
+@import url('accessibility.css');
+
+/* 8. Forms */
+@import url('forms.css');
+
+/* 9. Animations */
+@import url('animations.css');
+
+/* 10. Gallery */
+@import url('gallery.css');
+
+/* 11. Responsive Design */
+@import url('responsive.css');

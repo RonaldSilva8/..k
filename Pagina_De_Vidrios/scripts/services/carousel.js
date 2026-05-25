@@ -229,4 +229,8 @@ function init() {
     bindSwipeGestures();
 }
 
+if (typeof window !== 'undefined') {
+    window.initCarousels = init;
+}
+
 document.addEventListener('DOMContentLoaded', init);

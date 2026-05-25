@@ -32,10 +32,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
+    <a class="skip-to-main" href="#main-content">Saltar al contenido</a>
     <!-- Header -->
     <header role="banner">
         <div class="header-inner">
@@ -55,9 +56,9 @@
     </header>
 
     <!-- Main Content -->
-    <main role="main">
+    <main id="main-content" role="main">
         <article>
-            <section>
+            <section data-animate="fade-in-up">
                 <h2>Formulario de contacto</h2>
                 <div class="contact-cards">
                     <a class="contact-card contact-phone" href="tel:+573232439274">
@@ -97,6 +98,30 @@
                         <span>Instagram: Estructualuvid_sas</span>
                     </a>
                 </div>
+            </section>
+
+            <section data-animate="fade-in-up" aria-labelledby="contact-form-title">
+                <h2 id="contact-form-title">Envíanos un mensaje</h2>
+                <form id="contact-form" class="contact-form" data-validate-form>
+                    <div class="form-group">
+                        <label for="contact-name" class="required">Nombre</label>
+                        <input id="contact-name" type="text" name="nombre" required data-validate="name" placeholder="Tu nombre completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="required">Correo electrónico</label>
+                        <input id="contact-email" type="email" name="email" required data-validate="email" placeholder="tucorreo@dominio.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Teléfono</label>
+                        <input id="contact-phone" type="tel" name="telefono" data-validate="phone" placeholder="+57 300 000 0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" class="required">Mensaje</label>
+                        <textarea id="contact-message" name="mensaje" required data-validate="message" rows="5" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+                    </div>
+                    <input type="hidden" name="subject" value="Contacto desde sitio web">
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </form>
             </section>
         </article>
     </main>
@@ -154,6 +179,9 @@
     </footer>
 
     <script src="../scripts/general/script.js" defer></script>
+    <script src="../scripts/general/lazy-load.js" defer></script>
+    <script src="../scripts/components/form-validator.js" defer></script>
+    <script src="../scripts/components/animations.js" defer></script>
 </body>
 
 </html>

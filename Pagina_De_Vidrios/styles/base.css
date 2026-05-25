@@ -1,0 +1,63 @@
+/* ====== Base & Reset ====== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 110px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 120px 0 0;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #111;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ====== CSS Variables ====== */
+:root {
+    --primary-color: #0077ff;
+    --primary-light: #00b4ff;
+    --dark-bg: #111;
+    --dark-secondary: #1a1a1a;
+    --light-bg: #f5f5f5;
+    --white: #fff;
+    --text-dark: #111;
+    --text-secondary: #555;
+    --text-muted: #999;
+    --border-light: rgba(0, 0, 0, 0.08);
+    --border-lighter: rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 10px 24px rgba(0, 0, 0, 0.22);
+    --shadow-md: 0 15px 30px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 30px 70px rgba(0, 0, 0, 0.35);
+    --transition: 0.2s;
+    --transition-smooth: 0.45s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+/* ====== Global Utilities ====== */
+a:focus,
+button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+/* ====== Animation Keyframes ====== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

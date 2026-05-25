@@ -1,0 +1,404 @@
+/* ====== Accesibilidad ====== */
+
+/**
+ * Módulo de Accesibilidad (a11y)
+ * Mejora la experiencia para usuarios con discapacidades
+ */
+
+/* ====== Skip Links ====== */
+.skip-to-main {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 10001;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-to-main:focus {
+    top: 0;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ====== Focus Visible ====== */
+:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Remover outline para mouse users (pero mantener para keyboard) */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* ====== Contraste Mejorado ====== */
+.high-contrast-mode {
+    --primary-color: #003a99;
+    --primary-light: #0056cc;
+    --text-dark: #000;
+    --text-secondary: #333;
+}
+
+/* Texto con mejor contraste en fondos claros */
+section p,
+section li {
+    color: #222;
+}
+
+/* Mejorar contraste en footer */
+footer .footer-section p {
+    color: #e8e8e8;
+}
+
+footer .social-links.icons a {
+    color: #000;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+footer .social-links.icons a:hover {
+    border-color: rgba(0, 119, 255, 0.5);
+}
+
+/* ====== Texto Legible ====== */
+body {
+    letter-spacing: 0.3px;
+}
+
+section,
+.detail-item,
+.testimonial-card,
+.faq-item {
+    line-height: 1.7;
+}
+
+/* Aumento de tamaño de texto para legibilidad */
+@media (prefers-reduced-motion: no-preference) {
+    h1, h2, h3 {
+        letter-spacing: 0.5px;
+    }
+}
+
+/* ====== Navegación Mejorada con Teclado ====== */
+nav.top-nav a {
+    position: relative;
+}
+
+nav.top-nav a:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+nav.top-nav a:focus-visible::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--white);
+    border-radius: 2px;
+}
+
+/* ====== Buttons Accesibles ====== */
+.btn,
+button {
+    min-height: 44px;
+    min-width: 44px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.btn:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.btn:active,
+button:active {
+    transform: scale(0.98);
+}
+
+.carousel-btn {
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.carousel-btn:focus-visible {
+    outline: 3px solid var(--white);
+    outline-offset: 2px;
+}
+
+.modal-nav:focus-visible {
+    outline: 3px solid var(--white);
+    outline-offset: -4px;
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* ====== Formularios Accesibles ====== */
+input,
+textarea,
+select {
+    font-size: 16px;
+    font-family: inherit;
+    padding: 12px;
+    border: 2px solid var(--border-light);
+    border-radius: 6px;
+    min-height: 44px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.1);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(0, 119, 255, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Indicador requerido visible */
+.required::after {
+    content: ' *';
+    color: #d32f2f;
+    font-weight: 700;
+}
+
+/* Error messages */
+.error-message {
+    color: #d32f2f;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.form-group.error input,
+.form-group.error textarea,
+.form-group.error select {
+    border-color: #d32f2f;
+}
+
+/* ====== Iconos con Text Alternative ====== */
+[aria-label] {
+    position: relative;
+}
+
+/* ====== Links Mejorados ====== */
+a {
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Cambiar color de links visitados para mayor contraste */
+a:visited {
+    color: #6f42c1;
+}
+
+a:visited:hover {
+    color: #5a32a3;
+}
+
+/* ====== Reducción de Movimiento ====== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ====== Tema Oscuro Forzado ====== */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1a1a1a;
+        color: #e8e8e8;
+    }
+
+    section {
+        background: rgba(30, 30, 30, 0.96);
+        color: #e8e8e8;
+    }
+
+    section h2,
+    section h3 {
+        color: var(--white);
+    }
+
+    section p,
+    section li {
+        color: #d0d0d0;
+    }
+
+    input,
+    textarea,
+    select {
+        background: #2a2a2a;
+        color: var(--white);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+        background: #333;
+        border-color: var(--primary-light);
+    }
+
+    .detail-item {
+        background: #2a2a2a;
+        color: #d0d0d0;
+    }
+
+    .testimonial-card {
+        background: #2a2a2a;
+        color: #d0d0d0;
+    }
+
+    .faq-item {
+        background: #2a2a2a;
+        color: #d0d0d0;
+    }
+}
+
+/* ====== Alto Contraste ====== */
+@media (prefers-contrast: more) {
+    body {
+        color: #000;
+    }
+
+    section {
+        box-shadow: 0 0 0 2px var(--text-dark);
+    }
+
+    .btn,
+    button {
+        border: 2px solid currentColor;
+    }
+
+    .detail-item {
+        border-left-width: 6px;
+    }
+
+    nav.top-nav a {
+        border-width: 2px;
+    }
+}
+
+/* ====== Lectura Sin Distracciones ====== */
+.reading-mode {
+    max-width: 65ch;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.reading-mode section {
+    padding: 40px 30px;
+}
+
+.reading-mode section p {
+    margin-bottom: 1.5rem;
+}
+
+/* ====== Indicadores Visuales Mejorados ====== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Útil para screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ====== Responsive Accesibilidad ====== */
+@media (max-width: 600px) {
+    .skip-to-main {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+
+    button,
+    .btn {
+        min-height: 48px;
+        min-width: 48px;
+        font-size: 1.05rem;
+        padding: 14px 18px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 16px;
+        min-height: 48px;
+        padding: 14px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
+
+    nav.top-nav a {
+        padding: 12px 14px;
+        font-size: 1rem;
+    }
+}
+
+/* ====== Prueba de Accesibilidad ====== */
+.a11y-test-mode {
+    --primary-color: #ff0000;
+    --primary-light: #ff6666;
+}
+
+.a11y-test-mode * {
+    outline: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.a11y-test-mode input,
+.a11y-test-mode button,
+.a11y-test-mode a {
+    outline: 2px solid #ff0000;
+}
