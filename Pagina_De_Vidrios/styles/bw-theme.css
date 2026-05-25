@@ -1,0 +1,207 @@
+:root {
+    --bg: #000;
+    --surface: rgba(255, 255, 255, 0.05);
+    --surface-strong: rgba(255, 255, 255, 0.08);
+    --surface-soft: rgba(255, 255, 255, 0.03);
+    --text: #fff;
+    --text-muted: rgba(255, 255, 255, 0.72);
+    --text-secondary: rgba(255, 255, 255, 0.8);
+    --border: rgba(255, 255, 255, 0.14);
+    --border-strong: rgba(255, 255, 255, 0.24);
+}
+
+html,
+body,
+main {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+body {
+    background-image: none !important;
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+option,
+label,
+section,
+article,
+footer,
+header,
+nav,
+a {
+    color: var(--text) !important;
+}
+
+section,
+.card,
+.gallery-card,
+.stat-card,
+.testimonial-card,
+.faq-item,
+.form-container,
+.contact-card,
+.footer-section,
+.footer-bottom,
+.dropdown,
+.nav-menu,
+.gallery-card,
+.modal-image,
+.modal-overlay,
+.social-links a,
+.social-links.icons a,
+.contact-card,
+.form-group input,
+.form-group textarea,
+.form-group select,
+.form-group button,
+.form-group.submit-group button[type="submit"],
+.form-group.submit-group button[type="reset"] {
+    background: var(--surface) !important;
+    border-color: var(--border) !important;
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05) !important;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.card,
+.gallery-card,
+.stat-card,
+.contact-card,
+.testimonial-card,
+.faq-item,
+.form-container {
+    border: 1px solid var(--border) !important;
+}
+
+.btn,
+.btn-hero,
+.form-group.submit-group button[type="submit"],
+.sticky {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.btn:hover,
+.btn-hero:hover,
+.form-group.submit-group button[type="submit"]:hover,
+.sticky:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: var(--text) !important;
+}
+
+.hero-section,
+#testimonios,
+#faq {
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.hero-welcome h1,
+.hero-content h2,
+.hero-welcome p,
+section h2,
+.section-title,
+.contact-title,
+.contact-detail,
+.footer-section p,
+.footer-section li,
+.form-group label,
+.form-group .required,
+.testimonial-text,
+.testimonial-author,
+.faq-item h3,
+.faq-item p {
+    color: var(--text) !important;
+}
+
+.hero-section .btn-hero,
+.btn-hero,
+.form-group.submit-group button[type="submit"],
+.sticky {
+    border-radius: 999px;
+}
+
+.contact-icon,
+.social-links.icons .icon {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.contact-meta,
+.contact-title,
+.contact-detail,
+.footer-section a,
+.nav.top-nav a,
+.hero-content p,
+.section-description,
+.card-link,
+.gallery-card p,
+.stat-card p,
+.error-message,
+.success-message,
+.error-message-container,
+.form-help {
+    color: var(--text-secondary) !important;
+}
+
+.nav.top-nav a {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.nav.top-nav a:hover,
+.footer-section a:hover,
+.social-links a:hover,
+.social-links.icons a:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: var(--text) !important;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: var(--text) !important;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus,
+.form-group input.error,
+.form-group textarea.error,
+.form-group select.error,
+.form-group input.success,
+.form-group textarea.success,
+.form-group select.success {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.success-message,
+.error-message-container {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: var(--text-secondary) !important;
+    border-left-color: var(--border) !important;
+}
+
+footer {
+    background: #000 !important;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.03), transparent 38%);
+    pointer-events: none;
+}

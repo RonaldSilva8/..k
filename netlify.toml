@@ -1,0 +1,6 @@
+[build]
+  publish = "Pagina_De_Vidrios"
+  command = ""
+
+[dev]
+  publish = "Pagina_De_Vidrios"
