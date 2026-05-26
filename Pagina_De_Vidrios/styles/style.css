@@ -36,3 +36,24 @@
 
 /* 12. Black & White Modern Theme */
 @import url('bw-theme.css');
+
+/* ====== Service Page Contrast Overrides ====== */
+main#main-content h1,
+main#main-content h2,
+main#main-content h3,
+main#main-content p,
+main#main-content ul,
+main#main-content li,
+main#main-content .image-caption,
+main#main-content .carousel-btn,
+main#main-content a,
+main#main-content .page-intro p {
+    color: #fff !important;
+}
+
+main#main-content .detail-item,
+main#main-content .detail-item h3,
+main#main-content .detail-item p,
+main#main-content .detail-item li {
+    color: var(--text-dark) !important;
+}

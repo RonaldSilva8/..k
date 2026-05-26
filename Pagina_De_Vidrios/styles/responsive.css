@@ -1,4 +1,17 @@
 /* ====== Responsive: Tablets (max-width: 800px) ====== */
+.page-intro {
+    max-width: 1100px;
+    margin: 0 auto 34px;
+    padding: 0 18px;
+}
+.page-intro p {
+    line-height: 1.8;
+    max-width: 820px;
+    margin: 0 auto;
+}
+.carousel-wrapper {
+    min-width: 0;
+}
 @media (max-width: 800px) {
     .service-item {
         grid-template-columns: 1fr;
